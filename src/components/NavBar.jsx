@@ -1,21 +1,13 @@
 import React from "react";
+import { navLinks } from "../constants/index";
 
 const NavBar = () => {
-  const menuLists = [
-    { label: "Store" },
-    { label: "Mac" },
-    { label: "iphone" },
-    { label: "Watch" },
-    { label: "Vision" },
-    { label: "AirPods" },
-  ];
-
   return (
     <header>
       <nav>
         <img src="/logo.svg" />
         <ul>
-          {menuLists.map(({ label }, index) => (
+          {navLinks.map(({ label }, index) => (
             <li key={index}>
               <a href={label}>{label} </a>
             </li>
