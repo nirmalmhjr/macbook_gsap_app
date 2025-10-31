@@ -10,7 +10,8 @@ const Showcase = () => {
     if (!isTablet) {
       const timeline = gsap.timeline({
         scrollTrigger: {
-          trigger: "#showcase",
+          // trigger: "#showcase",
+          trigger: ".media ",
           start: "top top",
           end: "bottom top",
           scrub: true,

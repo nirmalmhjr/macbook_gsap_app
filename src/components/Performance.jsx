@@ -40,7 +40,8 @@ const Performance = () => {
       const tl = gsap.timeline({
         defaults: { duration: 2, ease: "power1.inOut", overwrite: "auto" },
         scrollTrigger: {
-          trigger: sectionEl,
+          // trigger: sectionEl,
+          trigger: ".wrapper img",
           start: "top bottom",
           end: "bottom top",
           scrub: 1,
