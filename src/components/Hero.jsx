@@ -17,6 +17,7 @@ const Hero = () => {
       </div>
       <video ref={videoRef} src="/videos/hero.mp4" autoPlay playsInline muted />
       <button>Buy</button>
+
       <p>From $1599 or $133/month for 12 months</p>
     </section>
   );
