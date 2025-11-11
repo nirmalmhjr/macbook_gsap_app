@@ -10,7 +10,8 @@ const Showcase = () => {
     if (!isTablet) {
       const timeline = gsap.timeline({
         scrollTrigger: {
-          trigger: "#showcase",
+          // trigger: "#showcase",
+          trigger: ".media ",
           start: "top top",
           end: "bottom top",
           scrub: true,
@@ -32,7 +33,7 @@ const Showcase = () => {
   return (
     <section id="showcase">
       <div className="media">
-        <video src="/public/videos/game.mp4" loop muted playsInline />
+        <video src="/videos/game.mp4" loop muted playsInline />
         <div className="mask ">
           <img src="/mask-logo.svg" alt="logo" />
         </div>
